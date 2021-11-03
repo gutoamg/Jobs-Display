@@ -1,0 +1,283 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+html {
+    width: 100%;
+    background-color: #F5F7F9;
+}
+
+body {
+    background-color: #F5F7F9;
+}
+
+#remote-jobs {
+    display: none;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 50px;
+    margin-left: 25px;
+    color: #87909E;
+}
+
+#tabs {
+    width: 100%;
+    height: 50px;
+
+    #tabs-row {
+        width: 100%;
+        height: 100%;
+        max-width: 1110px;
+        transform: translateX(-50%);
+        position: relative;
+        left: 50%;
+
+    }
+
+    .tabs-title {
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: left;
+        line-height: 50px;
+        margin-left: 25px;
+        color: #87909E;
+
+        position: relative;
+        float: left;
+
+        &:first-child {
+            margin-left: 1.375%;
+            color: #0C63FF;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:active {
+            color: #0C63FF;
+        }
+    }
+}
+
+#page-container {
+    width: 100%;
+    max-width: 1110px;
+    margin: 0px;
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    background-color: #F5F7F9;
+}
+
+.row-container {
+    width: 100%;
+    position: relative;
+    background-color: #F5F7F9;
+}
+
+.card {
+    width: 22.25%;
+    min-height: 255px;
+    position: relative;
+    float: left;
+    margin: 2.75% 1.375% 0px 1.375%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #E7EDF2;
+
+    &:hover .get-hired {
+        display: block;
+        animation: getHired 0.3s ease-in-out 0s forwards;
+        cursor: pointer;
+    }
+
+    .get-hired {
+        display: none;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: #0C63FF;
+
+        a {
+            width: 44.33%;
+            height: 46px;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background-color: #0C63FF;
+            border-style: solid;
+            border-width: 1px;
+            border-color: white;
+
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            text-align: center;
+            line-height: 46px;
+            color: white;
+        }
+    }
+
+    .get-hired-phone {
+        display: none;
+        width: 66px;
+        height: 26.44px;
+        position: absolute;
+        right: 0px;
+        background-color: #0C63FF;
+        border-style: solid;
+        border-width: 1px;
+        border-color: white;
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        font-size: 9.6px;
+        font-weight: 500;
+        line-height: 26.44px;
+        text-align: center;
+        color: white;
+    }
+
+    .text-container {
+        margin: 25px;
+
+        .card-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            text-align: left;
+            line-height: 20px;
+            color: #30343B;
+        }
+    
+        .card-text {
+            margin-top: 20px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-align: left;
+            line-height: 20px;
+            color: #87909E;
+        }
+
+        .card-location {
+            width: 100%;
+            min-height: 20px;
+            position: relative;
+            margin-top: 20px;
+
+            img {
+                display: inline;
+                width: 7.24px;
+                height: 10px;
+                position: relative;
+            }
+            
+            h3 {
+                display: inline;
+                font-family: 'Poppins', sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+                text-align: left;
+                line-height: 20px;
+                color: #87909E;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 880px) and (max-width: 1150px) {
+    #tabs {
+        .tabs-title {
+            &:first-child {
+                margin-left: 5%;
+            }
+        }
+    }
+    
+    #page-container {
+        width: 96%;
+    }
+    
+    .card {
+        width: 44%;
+        min-height: 200px;
+        margin: 6% 3% 0px 3%;
+    }
+}
+
+@media (min-width: 670px) and (max-width: 880px) {
+    #tabs {
+        .tabs-title {
+            &:first-child {
+                margin-left: 5%;
+            }
+        }
+    }
+    
+    #page-container {
+        width: 96%;
+    }
+    
+    .card {
+        width: 44%;
+        min-height: 230px;
+        margin: 6% 3% 0px 3%;
+    }
+}
+
+@media (max-width: 670px) {
+    #tabs {
+        .tabs-title {
+            &:first-child {
+                margin-left: 5%;
+            }
+        }
+    }
+    
+    #page-container {
+        width: 90%;
+    }
+    
+    .card {
+        width: 100%;
+        min-height: 200px;
+        margin: 5% 0% 0px 0%;
+
+        .text-container {
+            .card-title {
+                line-height: 30px;
+            }
+        }
+
+        .get-hired-phone {
+            display: inline-block;
+        }
+
+        &:hover .get-hired {
+            display: none;
+            animation: none;
+            cursor: unset;
+        }
+    }
+}
+
+@keyframes getHired {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
