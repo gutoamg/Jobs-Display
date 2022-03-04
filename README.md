@@ -1,8 +1,8 @@
 # Briefing
 
-This responsive card model uses highly browser compatible CSS and HTML, besides some Javascript for filtering the cards accordingly to the menu options when they are selected. The way the cards are filtered is not optimized, but for this case it fits the project well.
+This __responsive__ card model uses __highly browser compatible CSS and HTML__, besides some __Javascript__ for filtering the cards accordingly to the menu options when they are selected. The way the cards are filtered _is not optimized_, but for this case it fits the project well.
 
-The Design was given to me through a Figma file and I followed it precisely.
+The Design was given to me through a __Figma__ file and I followed it precisely.
 
 # Screenshots
 ### All jobs page
