@@ -2,6 +2,8 @@
 
 This responsive card model uses highly browser compatible CSS and HTML, besides some Javascript for filtering the cards accordingly to the menu options when they are selected. The way the cards are filtered is not optimized, but for this case it fits the project well.
 
+The Design was given to me through a Figma file and I followed it precisely.
+
 # Screenshots
 ### All jobs page
 ![All jobs page](./readmePhotos/Cards-All-page.png)
